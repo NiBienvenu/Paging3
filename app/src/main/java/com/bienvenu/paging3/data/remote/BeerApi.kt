@@ -12,6 +12,6 @@ interface BeerApi {
     ): List<BeerDto>
 
     companion object {
-        const val BASE_URL = "https://api.punkapi.com/v2/"
+        const val BASE_URL = "http://10.42.0.1:8000/api/"
     }
 }

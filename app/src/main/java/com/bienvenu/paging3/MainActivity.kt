@@ -11,7 +11,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.paging.compose.collectAsLazyPagingItems
 import com.bienvenu.paging3.presentation.BeerScreen
 import com.bienvenu.paging3.presentation.BeerViewModel
-import com.bienvenu.paging3.ui.theme.ComposePaging3CachingTheme
+import com.bienvenu.paging3.ui.theme.Paging3Theme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -19,7 +19,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            ComposePaging3CachingTheme {
+            Paging3Theme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
