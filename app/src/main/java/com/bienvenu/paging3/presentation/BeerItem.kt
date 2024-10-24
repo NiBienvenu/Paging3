@@ -14,7 +14,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import com.bienvenu.paging3.domain.Beer
-import com.bienvenu.paging3.ui.theme.ComposePaging3CachingTheme
+import com.bienvenu.paging3.ui.theme.Paging3Theme
 
 @Composable
 fun BeerItem(
@@ -77,7 +77,7 @@ fun BeerItem(
 @Preview
 @Composable
 fun BeerItemPreview() {
-    ComposePaging3CachingTheme {
+    Paging3Theme {
         BeerItem(
             beer = Beer(
                 id = 1,
